@@ -9,5 +9,6 @@ r.on({
     var weight=r.get('weight')
     var bmi=weight/(high*high)
     r.set('BMI',bmi)
-} 
+    }
+ 
 })
