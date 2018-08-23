@@ -1,0 +1,45 @@
+<http>
+    <head>
+        <meta charset="UTF-8">
+
+        <style>
+
+                h1{
+                    color:white;
+                    font-size:50px;
+                    border-bottom:10px dotted black
+                    
+                }
+                html{
+                    font-family: serif;
+
+                }
+                body{
+                    background-color: aquamarine
+                }
+                .logo{
+                    text-align:center;
+                }
+                p{
+                    color:red;
+                }
+            </style>
+    </head>
+<body>
+    <div id="container"></div>
+
+    <script type="text/ractive" id="template">
+    <h1 class="logo">BMI</h1>
+    <input type="text" value="{{high}}">m<br>
+    <input type="text" value="{{weight}}">kg<br>
+    <button on-click="clicked">go</button>
+    <p>{{BMI}}</p>
+    
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/ractive"></script>
+    <script src="app.js">
+    
+    </script>
+</body>
+</http>
